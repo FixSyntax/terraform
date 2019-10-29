@@ -1,0 +1,31 @@
+{
+    "containerDefinitions":[
+        {
+            "name":"aplicação",
+            "image":"aaa./rc-xxxx/aplicação:latest",
+            "cpu":0,
+            "portMappings":[
+                {
+                    "containerPort":xxx,
+                    "hostPort":0,
+                    "protocol":"tcp"
+                }
+            ],
+            "essential":true,
+            "environment":[ 
+            ],
+            "mountPoints":[ 
+            ],
+            "volumesFrom":[ 
+            ]
+       }
+    ],
+    "family":"aplicação",
+    "taskRoleArn":"arn:aws:iam::aaa:role/ecsTaskExecutionRole",
+    "volumes":[ 
+    ],
+    "placementConstraints":[ 
+    ],
+    "cpu":"128",
+    "memory":"128"
+}
